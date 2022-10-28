@@ -3,10 +3,14 @@ package homework;
 public class Coll {
 
 	public static void main(String[] args) {
-			ArrayList<String> list=new ArrayList<String>();
+		ArrayList<String> list=new ArrayList<String>();
 		LinkedList<String> al=new LinkedList<String>(); 
 		Stack<String> stack = new Stack<String>();  
-		Vector<String> v=new Vector<String>(); 
+		Vector<String> v=new Vector<String>();
+		PriorityQueue<String> queue=new PriorityQueue<String>();  
+		Deque<String> deque = new ArrayDeque<String>(); 
+		HashSet<String> set=new HashSet<String>();
+	        LinkedHashSet<String> set=new LinkedHashSet<String>(); 
 		list.add("haroon"); 
 		list.add("khan");  
 		list.add("haroon");  
@@ -50,11 +54,13 @@ Iterator<String> it3r=v.iterator();
 while(itr3.hasNext()){  
 System.out.println(itr3.next());  
 } 
-		PriorityQueue<String> queue=new PriorityQueue<String>();  
-queue.add("Amit Sharma");  
-queue.add("Vijay Raj");  
-queue.add("JaiShankar");  
-queue.add("Raj");  
+	
+System.out.println("------------------------------------------------------------------------------");
+		
+queue.add("A");  
+queue.add("b");  
+queue.add("n");  
+queue.add("m");  
 System.out.println("head:"+queue.element());  
 System.out.println("head:"+queue.peek());  
 System.out.println("iterating the queue elements:");  
@@ -70,9 +76,35 @@ while(itr4.hasNext()){
 System.out.println(itr4.next());  
 }  
 	
-
-	}
+	
+System.out.println("------------------------------------------------------------------------------");	
+deque.add("hk");  
+deque.add("baba");  
+deque.add("kaka");   
+for (String str : deque) {  
+System.out.println(str);  
+} 
+	 
+  
+System.out.println("------------------------------------------------------------------------------");
 		
+set.add("khan");  
+set.add("mohammad");  
+set.add("haroon");  
+set.add("kaka");   
+Iterator<String> itr=set.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}	
+System.out.println("------------------------------------------------------------------------------");		 
+set.add("ali");  
+set.add("kabir");  
+set.add("sami");  
+set.add("khalil");  
+Iterator<String> itr=set.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+} 	
 	}
 
 }
